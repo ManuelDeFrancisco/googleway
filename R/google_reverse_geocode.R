@@ -32,12 +32,13 @@ google_reverse_geocode <- function(location,
   if(!is.logical(simplify))
     stop("simplify must be logical - TRUE or FALSE")
 
+  
   ## check location
-  if(!is.numeric(location))
-    stop("location must be a vector of a pair of latitude and longitude coordinates")
+ # if(!is.numeric(location))
+  #  stop("location must be a vector of a pair of latitude and longitude coordinates")
 
-  if(!length(location) == 2)
-    stop("location must be a vector of a pair of latitude and longitude coordinates")
+  #if(!length(location) == 2)
+   # stop("location must be a vector of a pair of latitude and longitude coordinates")
 
   location <- paste0(location, collapse = ",")
 
